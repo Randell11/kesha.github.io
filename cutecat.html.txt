@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Tonight with Cute Cat</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            background-color: #fff0f5;
+            padding: 50px;
+        }
+        img {
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .message {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐱💖 Date Tonight! 💖🐱</h1>
+    <img src="https://placekitten.com/400/300" alt="Cute Cat">
+    <div class="message">Choose our date and time, bebe!</div>
+    <input type="date" id="dateInput">
+    <input type="time" id="timeInput">
+    <br>
+    <button onclick="showMessage()">Set the Date</button>
+    <div id="finalMessage" class="message hidden">Kiss muna bebe hehe 😚</div>
+
+    <script>
+        function showMessage() {
+            const date = document.getElementById('dateInput').value;
+            const time = document.getElementById('timeInput').value;
+            if (date && time) {
+                document.getElementById('finalMessage').classList.remove('hidden');
+            } else {
+                alert("Please choose both date and time, bebe!");
+            }
+        }
+    </script>
+</body>
+</html>
