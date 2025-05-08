@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date tonight?</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ff3399;
+      text-shadow: 2px 2px #ffcce6;
+      animation: pulse 2s infinite;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ff66cc;
+      margin-top: 20px;
+    }
+
+    .sparkles {
+      font-size: 32px;
+      color: #ff99cc;
+      animation: sparkle 1.5s infinite alternate;
+    }
+
+    @keyframes sparkle {
+      from { transform: scale(1); opacity: 0.6; }
+      to { transform: scale(1.2); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Date tonight?</h1>
+  <div class="sparkles">✨💖✨</div>
+  <img src="https://placekitten.com/300/300" alt="Cute Cat">
+  <div class="sparkles">✨💖✨</div>
+</body>
+</html>
